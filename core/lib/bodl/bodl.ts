@@ -1,3 +1,4 @@
+
 import type BodlEvents from '@bigcommerce/bodl-events';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -59,9 +60,11 @@ export class Bodl {
     try {
       this.assertsValidConfig(this.config);
 
-      if (typeof window === 'undefined') {
-        throw new Error('Bodl is only available in the browser environment');
-      }
+
+        if (typeof window === 'undefined') {
+          throw new Error('Bodl is only available in the browser environment');
+        }
+
 
       this.initializeBodlEvents();
       this.initializeDataLayer();
