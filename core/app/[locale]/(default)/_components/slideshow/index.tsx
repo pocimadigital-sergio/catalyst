@@ -9,6 +9,7 @@ import SlideBg03 from './slide-bg-03.jpg';
 export function Slideshow() {
   const t = useTranslations('Home.Slideshow');
 
+
   const slides = [
     {
       title: t('Slide01.title'),
